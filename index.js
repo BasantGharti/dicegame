@@ -27,14 +27,14 @@ function playGame(){
     // Image to display for left side Player
     let randomNumber1 = Math.random() * 6 + 1;  //1-6.99
     randomNumber1 = Math.floor(randomNumber1);  //1-6
-    let leftImagePath = `images/dice${randomNumber1}.png`;  //images/dice1.png- dice6.png
+    let leftImagePath = `dice${randomNumber1}.png`;  //images/dice1.png- dice6.png
 
     document.querySelector(".img1").setAttribute("src", leftImagePath);
 
     //Image to display for right side Player
     let randomNumber2 = Math.random() * 6 + 1;
     randomNumber2 = Math.floor(randomNumber2);
-    let rightImagePath = `images/dice${randomNumber2}.png`;
+    let rightImagePath = `dice${randomNumber2}.png`;
     document.querySelector(".img2").setAttribute("src", rightImagePath);
     let result = "";
     if(randomNumber1 > randomNumber2){
