@@ -27,7 +27,7 @@ function playGame(){
     // Image to display for left side Player
     let randomNumber1 = Math.random() * 6 + 1;  //1-6.99
     randomNumber1 = Math.floor(randomNumber1);  //1-6
-    let leftImagePath = `dice${randomNumber1}.png`;  //images/dice1.png- dice6.png
+    let leftImagePath = "dice" + ${randomNumber1} + ".png";  //images/dice1.png- dice6.png
 
     document.querySelector(".img1").setAttribute("src", leftImagePath);
 
